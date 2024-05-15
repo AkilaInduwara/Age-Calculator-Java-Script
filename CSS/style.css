@@ -31,14 +31,17 @@
     align-items: center;
 }
 
+.center{
+    text-align: center;
+}
+
 .display-div{
     background: rgba(0,0,0,0.5);   
     max-width: 200%; 
     width: 1000px;
     padding: 5%;
-    
-    
-           
+    align-items: center;
+    justify-content: center;
 }
 
 .display-div h1{
@@ -57,20 +60,63 @@
 }
 
 .input-box{
-    background: rgba(255,255,255,0.7);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    margin: 50px 0;    
-    position: relative;
+    background: rgba(255,255,255,0.5);    
+    display: inline-flex;       
+    margin: 50px 0;
+    align-items: center;
+    justify-content: center; 
+    align-content: center;    
     padding: 26px 24px;
+    width: 50%;
+    border-radius: 5px;
 }
 
-.input-cont{    
-    display: inline-flex;
-    justify-content: space-between;
+
+.input-box input{
+    flex: 1;
+    width: 100%;
+    padding: 14px 20px; 
+    border-radius: 5px;
+    border: 0;
+    outline: 0;  
+    font-size: 20px; 
     position: relative;
+}
+
+.input-box input::-webkit-calendar-picker-indicator{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background: calc(100%);
+    background-size: 10px;
+    cursor: pointer;
+}
+
+.input-box button{
+    background: var(--c-bg);
+    border: 0;
+    outline: 0;
+    transition: var(--transition);
+    font-size: 20px;
+    cursor: pointer;
+    
 
 }
 
+.input-box button:hover{
+    background: var(--c-brand3);
+}
 
+#result{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--c-brand2);
+}
+
+#result span{
+    color: var(--c-brand1);
+}
