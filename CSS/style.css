@@ -1,0 +1,76 @@
+@import url(../CSS/poppins.css);
+
+
+:root{
+    --c-bg : #153448;
+    --c-brand1 : #DFD0B8;
+    --c-brand2 : #948979;
+    --c-brand3 : #3C5B6F;
+    --transition: 0.5s all ease;
+
+    --c-bg-rgb : 21, 52, 72;
+    --c-brand1-rgb : 223, 208, 184;
+    --c-brand2-rgb : 148, 137, 121;
+    --c-brand3-rgb : 60, 91, 111;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+
+.main-div{
+    background: linear-gradient(135deg,rgba(var(--c-bg-rgb)),rgba(var(--c-brand3-rgb)));
+    max-width: 100%;    
+    min-height: 100vh;
+    color: var(--c-brand2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-div{
+    background: rgba(0,0,0,0.5);   
+    max-width: 200%; 
+    width: 1000px;
+    padding: 5%;
+    
+    
+           
+}
+
+.display-div h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.display-div h1 span{
+    font-size: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 15px 0;
+    color: var(--c-brand1);
+    border-bottom: 4px solid var(--c-brand1);
+}
+
+.input-box{
+    background: rgba(255,255,255,0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin: 50px 0;    
+    position: relative;
+    padding: 26px 24px;
+}
+
+.input-cont{    
+    display: inline-flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+
